@@ -18,7 +18,7 @@ public class NewLineStringReturner implements StringStringReturner {
 				com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.impl.Constants.LINE_SEPARATOR);
 		final StringBuilder myStringBuilder = new StringBuilder(systemDefaultNewLineString);
 		final String myString = myStringBuilder.toString();
-		return new String(myString);
+		return new (myString);
 	}
 
 }
