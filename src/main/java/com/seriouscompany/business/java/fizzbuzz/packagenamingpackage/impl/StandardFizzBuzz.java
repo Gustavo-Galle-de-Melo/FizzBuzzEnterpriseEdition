@@ -13,15 +13,15 @@ import com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.interfaces
 @Service
 public class StandardFizzBuzz implements FizzBuzz {
 
-	private final FizzBuzzSolutionStrategyFactory _fizzBuzzSolutionStrategyFactory;
+	private final FizzBuzzSolutionStrategyFactory fizzBuzzSolutionStrategyFactory;
 
 	/**
 	 * @param _fizzBuzzSolutionStrategyFactory
 	 */
 	@Autowired
-	public StandardFizzBuzz(final FizzBuzzSolutionStrategyFactory _fizzBuzzSolutionStrategyFactory) {
+	public StandardFizzBuzz(final FizzBuzzSolutionStrategyFactory fizzBuzzSolutionStrategyFactory) {
 		super();
-		this._fizzBuzzSolutionStrategyFactory = _fizzBuzzSolutionStrategyFactory;
+		this._fizzBuzzSolutionStrategyFactory = fizzBuzzSolutionStrategyFactory;
 	}
 
 	/**
@@ -29,7 +29,7 @@ public class StandardFizzBuzz implements FizzBuzz {
 	 */
 	public void fizzBuzz(final int nFizzBuzzUpperLimit) {
 		final FizzBuzzSolutionStrategy mySolutionStrategy =
-				this._fizzBuzzSolutionStrategyFactory.createFizzBuzzSolutionStrategy();
+				this.fizzBuzzSolutionStrategyFactory.createFizzBuzzSolutionStrategy();
 		mySolutionStrategy.runSolution(nFizzBuzzUpperLimit);
 	}
 
