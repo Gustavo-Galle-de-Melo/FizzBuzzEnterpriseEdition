@@ -26,7 +26,7 @@ public class ApplicationContextHolder implements ApplicationContextAware {
 	 * Holder for ApplicationContextReferenceUpdater
 	 */
 	private static class ApplicationContextReferenceUpdaterHolder {
-		static ApplicationContextReferenceUpdater INSTANCE = new ApplicationContextReferenceUpdater();
+		static ApplicationContextReferenceUpdater instance = new ApplicationContextReferenceUpdater();
 	}
 
 	private ApplicationContextHolder() {
