@@ -13,15 +13,15 @@ import com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.interfaces
 @Service
 public class BuzzStringPrinterFactory implements StringPrinterFactory {
 
-	private final BuzzStringPrinter _buzzStringPrinter;
+	private final BuzzStringPrinter buzzStringPrinter;
 
 	/**
-	 * @param _buzzStringPrinter BuzzStringPrinter
+	 * @param buzzStringPrinter BuzzStringPrinter
 	 */
 	@Autowired
-	public BuzzStringPrinterFactory(final BuzzStringPrinter _buzzStringPrinter) {
+	public BuzzStringPrinterFactory(final BuzzStringPrinter buzzStringPrinter) {
 		super();
-		this._buzzStringPrinter = _buzzStringPrinter;
+		this.buzzStringPrinter = buzzStringPrinter;
 	}
 
 	/**
@@ -29,7 +29,7 @@ public class BuzzStringPrinterFactory implements StringPrinterFactory {
 	 */
 	@Override
 	public StringPrinter createStringPrinter() {
-		return this._buzzStringPrinter;
+		return this.buzzStringPrinter;
 	}
 
 }
