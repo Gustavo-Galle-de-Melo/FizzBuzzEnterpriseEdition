@@ -13,15 +13,15 @@ import com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.interfaces
 @Service
 public class BuzzStrategyFactory implements IsEvenlyDivisibleStrategyFactory {
 
-	private final BuzzStrategy _buzzStrategy;
+	private final BuzzStrategy buzzStrategy;
 
 	/**
 	 * @param _buzzStrategy BuzzStrategy
 	 */
 	@Autowired
-	public BuzzStrategyFactory(final BuzzStrategy _buzzStrategy) {
+	public BuzzStrategyFactory(final BuzzStrategy buzzStrategy) {
 		super();
-		this._buzzStrategy = _buzzStrategy;
+		this.buzzStrategy = buzzStrategy;
 	}
 
 	/**
@@ -29,7 +29,7 @@ public class BuzzStrategyFactory implements IsEvenlyDivisibleStrategyFactory {
 	 */
 	@Override
 	public IsEvenlyDivisibleStrategy createIsEvenlyDivisibleStrategy() {
-		return this._buzzStrategy;
+		return this.buzzStrategy;
 	}
 
 }
