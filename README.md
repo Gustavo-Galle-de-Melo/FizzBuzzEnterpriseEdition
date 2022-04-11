@@ -1,6 +1,6 @@
 # FizzBuzzEnterpriseEdition
 
-[![Build status][Build status image]][Build status URL] [![codecov.io](https://codecov.io/github/Gustavo-Galle-de-Melo/FizzBuzzEnterpriseEdition/coverage.svg?branch=master)](https://codecov.io/github/Gustavo-Galle-de-Melo/FizzBuzzEnterpriseEdition?branch=master)
+[![Build status][Build status image]][Build status URL] [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Gustavo-Galle-de-Melo_FizzBuzzEnterpriseEdition&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Gustavo-Galle-de-Melo_FizzBuzzEnterpriseEdition)
 
 [Build status image]: https://secure.travis-ci.org/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition.png?branch=master
 [Build status URL]: http://travis-ci.org/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
