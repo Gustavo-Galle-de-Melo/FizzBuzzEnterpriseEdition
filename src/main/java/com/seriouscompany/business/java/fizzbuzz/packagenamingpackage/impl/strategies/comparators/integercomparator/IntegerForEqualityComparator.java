@@ -18,10 +18,6 @@ public final class IntegerForEqualityComparator {
 	public static boolean areTwoIntegersEqual(final int nFirstInteger, final int nSecondInteger) {
 		final ThreeWayIntegerComparisonResult comparisonResult =
 				ThreeWayIntegerComparator.Compare(nFirstInteger, nSecondInteger);
-		if (ThreeWayIntegerComparisonResult.FirstEqualsSecond == comparisonResult) {
-			return true;
-		} else {
-			return false;
-		}
+		return ThreeWayIntegerComparisonResult.FirstEqualsSecond == comparisonResult; 
 	}
 }
