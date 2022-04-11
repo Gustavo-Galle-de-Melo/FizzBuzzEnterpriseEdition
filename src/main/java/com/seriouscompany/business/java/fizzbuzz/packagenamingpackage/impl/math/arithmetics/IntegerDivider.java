@@ -45,12 +45,12 @@ public class IntegerDivider {
 			final double dbFirstNumber = IntToDoubleConverter.Convert(nFirstInteger);
 			final double dbSecondNumber = IntToDoubleConverter.Convert(nSecondInteger);
 			final double dbQuotient = dbFirstNumber / dbSecondNumber;
-			double dbRoundedQuotient = (double) Constants.INTEGER_ORIGIN_ZERO_VALUE;
+			double dbRoundedQuotient =  Constants.INTEGER_ORIGIN_ZERO_VALUE;
 			if (this.firstIsSmallerThanSecondDoubleComparator.FirstIsSmallerThanSecond(dbQuotient,
-					(double) Constants.INTEGER_ORIGIN_ZERO_VALUE)) {
+					 Constants.INTEGER_ORIGIN_ZERO_VALUE)) {
 				dbRoundedQuotient = Math.ceil(dbQuotient);
 			} else if (this.firstIsLargerThanSecondDoubleComparator.FirstIsLargerThanSecond(dbQuotient,
-					(double) Constants.INTEGER_ORIGIN_ZERO_VALUE)) {
+					 Constants.INTEGER_ORIGIN_ZERO_VALUE)) {
 				dbRoundedQuotient = Math.floor(dbQuotient);
 			}
 			final int nIntegerQuotient = DoubleToIntConverter.Convert(dbRoundedQuotient);
