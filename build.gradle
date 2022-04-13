@@ -1,3 +1,14 @@
+plugins {
+    id "jacoco"
+    id "org.sonarqube" version "3.3"
+}
+ 
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+}
+
 apply plugin: 'java'
 apply plugin: 'application'
 
@@ -24,17 +35,6 @@ dependencies {
             'org.springframework:spring-expression:3.2.13.RELEASE'
 
     testCompile 'junit:junit:4.8.2'
-}
-
-plugins {
-    id "jacoco"
-    id "org.sonarqube" version "3.3”
-}
- 
-jacocoTestReport {
-    reports {
-        xml.enabled true
-    }
 }
 
 mainClassName = 'com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.impl.Main'
