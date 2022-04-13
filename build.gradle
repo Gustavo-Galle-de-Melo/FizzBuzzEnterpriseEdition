@@ -1,16 +1,17 @@
+
 plugins {
     id "jacoco"
     id "org.sonarqube" version "3.3"
 }
+
+apply plugin: 'java'
+apply plugin: 'application'
  
 jacocoTestReport {
     reports {
         xml.enabled true
     }
 }
-
-apply plugin: 'java'
-apply plugin: 'application'
 
 repositories {
     jcenter()
