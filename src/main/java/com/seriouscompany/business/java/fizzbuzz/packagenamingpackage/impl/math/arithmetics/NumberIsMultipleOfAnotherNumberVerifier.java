@@ -1,7 +1,7 @@
 package com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.impl.math.arithmetics;
 
 import com.seriouscompany.business.java.fizzbuzz.packagenamingpackage.impl.ApplicationContextHolder;
-import javax.annotation.PostConstruct;
+//import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -23,7 +23,7 @@ public class NumberIsMultipleOfAnotherNumberVerifier {
 	/**
 	 * @return
 	 */
-	@PostConstruct
+	//@PostConstruct
 	public void init() {
 		final ApplicationContext applicationContext = applicationContextHolder.getApplicationContext();
 

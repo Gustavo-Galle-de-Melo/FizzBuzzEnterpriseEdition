@@ -39,7 +39,7 @@ public class ApplicationContextHolder implements ApplicationContextAware {
 	 */
 	@Override
 	public void setApplicationContext(final ApplicationContext applicationContext) throws BeansException {
-		ApplicationContextReferenceUpdaterHolder.INSTANCE.updateApplicationContextReference(applicationContext);
+		ApplicationContextReferenceUpdaterHolder.instance.updateApplicationContextReference(applicationContext);
 	}
 
 	/**

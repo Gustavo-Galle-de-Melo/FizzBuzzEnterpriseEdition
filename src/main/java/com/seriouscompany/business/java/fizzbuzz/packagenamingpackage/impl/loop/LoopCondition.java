@@ -17,11 +17,11 @@ public class LoopCondition {
 	 * @return boolean
 	 */
 	public boolean evaluateLoop(final int nCurrentNumber, final int nTotalCount) {
-		final ThreeWayIntegerComparisonResult comparisonResult = ThreeWayIntegerComparator.Compare(nCurrentNumber,
+		final ThreeWayIntegerComparisonResult comparisonResult = ThreeWayIntegerComparator.compare(nCurrentNumber,
 				nTotalCount);
-		if (ThreeWayIntegerComparisonResult.FirstIsLessThanSecond == comparisonResult) {
+		if (ThreeWayIntegerComparisonResult.FIRST_IS_LESS_THAN_SECOND == comparisonResult) {
 			return true;
-		} else if (ThreeWayIntegerComparisonResult.FirstEqualsSecond == comparisonResult) {
+		} else if (ThreeWayIntegerComparisonResult.FIRST_IS_LESS_THAN_SECOND == comparisonResult) {
 			return true;
 		} else {
 			return false;
